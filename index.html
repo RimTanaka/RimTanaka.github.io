@@ -6,21 +6,59 @@
     <title>Резюме - Рим Мингазов</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Time New Rowland, sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
             background-color: #f4f4f4;
         }
         .container {
-            max-width: 800px;
-            margin: 0 auto;
+            max-width: 1000px;
+            margin: 20px auto;
+            display: flex;
             background-color: #fff;
-            padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        h1, h2, h3 {
+        .left-column {
+            width: 30%;
+            background-color: #605B8F;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .right-column {
+            width: 70%;
+            background-color: #FBF2F2;
+            padding: 40px;
             color: #333;
+        }
+        img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 20px;  
+            height: auto;
+        }
+        h1 {
+            font-size: 32px;
+            text-align: center;
+            margin: 0;
+        }
+        h2 {
+            font-size: 24px;
+            color: #605B8F;
+            margin-bottom: 10px;
+        }
+        h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        p {
+            line-height: 1.6;
+            font-size: 18px;
         }
         a {
             color: #3498db;
@@ -36,74 +74,102 @@
         li {
             margin-bottom: 10px;
         }
-        .skills, .contacts {
+        .skills, .contacts, .education {
             margin-bottom: 20px;
         }
-        .footer {
+        .right-column h1, .right-column h2 {
             text-align: center;
-            margin-top: 40px;
+        }
+        .block {
+            margin-bottom: 30px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Рим Мингазов</h1>
-        <p><strong>Python Developer</strong></p>
+        <!-- Левая колонка -->
+        <div class="left-column">
+            <img src="./jpg/my photo.jpg" alt="Рим Мингазов">
+            <div class="contacts">
+                <h2 style="color: white;">Контакты</h2>
+                <ul align="left">
+                    <li>Телефон: +7 (917) 896-52-01</li>
+                    <li>Email: <a href="mailto:rim_197@mail.ru" style="color: white;">rim_197@mail.ru</a></li>
+                    <li>GitHub: <a href="https://github.com/RimTanaka" target="_blank" style="color: white;">github.com/RimTanaka</a></li>
+                    <li>Telegram: <a href="https://t.me/tyt_ty4ka" target="_blank" style="color: white;">@TyT_Ty4ka</a></li>
+                    <li>Казань / готов к переезду</li>
+                </ul>
+            </div>
 
-        <h2>Опыт работы</h2>
-        <ul>
-            <li>
-                <strong>Parcel-Machine | Python, Telebot, Sqlite, C++</strong> <br>
-                Проект объединяет Telegram бота на Python и Arduino для управления почтоматом. <br>
-                <a href="https://github.com/RimTanaka/Parcel-Machine" target="_blank">Ссылка на проект</a>
-            </li>
-            <li>
-                <strong>HTTP Server | C, HTML, CSS</strong> <br>
-                HTTP и WebSocket сервер для поддержки чатов. <br>
-                <a href="https://github.com/RimTanaka/HTTP_serv_c" target="_blank">Ссылка на проект</a>
-            </li>
-            <li>
-                <strong>Decimal | C</strong> <br>
-                Командная разработка библиотеки decimal.a для точных финансовых вычислений. <br>
-                <a href="https://github.com/RimTanaka/s21_decimal/tree/develop" target="_blank">Ссылка на проект</a>
-            </li>
-        </ul>
+            <div class="skills">
+                <h2 style="color: white;">Навыки</h2>
+                
+                    <li align="left">Python</li>
+                    <li align="left">C/C++</li>
+                    <li align="left">Git</li>
+                    <li align="left">Docker</li>
+                    <li align="left">Linux/Bash</li>
+                    <li align="left">SQL (PostgreSQL)</li>
+            </div>
 
-        <h2>Образование</h2>
-        <ul>
-            <li><strong>Школа 21</strong> — образовательный проект от Сбер для разработчиков (04.2024 - наст. время) <br>
-                <a href="https://21-school.ru/" target="_blank">Посетить сайт</a>
-            </li>
-            <li><strong>КРМУ</strong> — специальность Информационные Системы (2022 - наст. время) <br>
-                <a href="https://kriu.edu.kz/" target="_blank">Посетить сайт</a>
-            </li>
-        </ul>
-
-        <h2>Навыки</h2>
-        <ul class="skills">
-            <li>Python</li>
-            <li>C/C++</li>
-            <li>Git</li>
-            <li>Docker</li>
-            <li>Linux/Bash</li>
-            <li>SQL (PostgreSQL)</li>
-        </ul>
-
-        <h2>Контакты</h2>
-        <ul class="contacts">
-            <li>Телефон: +7 (917) 896-52-01</li>
-            <li>Email: <a href="mailto:rim_197@mail.ru">rim_197@mail.ru</a></li>
-            <li>GitHub: <a href="https://github.com/RimTanaka" target="_blank">github.com/RimTanaka</a></li>
-            <li>Telegram: <a href="https://t.me/tyt_ty4ka" target="_blank">@TyT_Ty4ka</a></li>
-            <li>Местоположение: Казань / готов к переезду</li>
-        </ul>
-
-        <h2>О себе</h2>
-        <p>Студент 3 курса КРМУ по направлению Информационные Системы. С апреля 2024 года обучаюсь в Школе программирования 21 от Сбер. В настоящее время активно изучаю Python и параллельно работаю над различными учебными проектами. Люблю постоянно развиваться и узнавать новое. Меня вдохновляет возможность внести позитивные изменения в жизни людей.</p>
-
-        <div class="footer">
-            <p>&copy; 2024 Рим Мингазов</p>
+            <div class="education">
+                <h2 style="color: white;">Образование</h2>
+                <ul align="left">
+                    <li><strong>Школа 21</strong> — образовательный проект от Сбер для разработчиков (04.2024 - наст. время) <br>
+                        <a href="https://21-school.ru/" target="_blank" style="color: white;">Посетить сайт</a>
+                    </li>
+                    <li><strong>КРМУ</strong> — специальность Информационные Системы (2022 - наст. время) <br>
+                        <a href="https://kriu.edu.kz/" target="_blank" style="color: white;">Посетить сайт</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+
+        <!-- Правая колонка -->
+        <div class="right-column">
+            <h1 style="color: black;">Рим Мингазов</h1>
+            <h2 style="color: black;">Python Developer</h2>
+
+            <div class="block">
+                <h2 style="color: black;">О себе</h2>
+                <p>Студент 3 курса КРМУ по направлению Информационные Системы. С апреля 2024 года обучаюсь в Школе программирования 21 от Сбер. В настоящее время активно изучаю Python и параллельно работаю над различными учебными проектами. Люблю постоянно развиваться и узнавать новое. Меня вдохновляет возможность внести позитивные изменения в жизни людей.</p>
+            </div>
+
+            <div class="block">
+                <h2 style="color: black;">PET ПРОЕКТЫ</h2>
+                <ul>
+                    <li><strong>Parcel-Machine | Python, Telebot, Sqlite, C++</strong><br>
+                      <hr>
+                      <p>Проект объединяет Telegram бота на Python и Arduino для управления почтоматом, позволяя пользователям открывать и закрывать двери с помощью команд в Telegram. </p>
+                        <a href="https://github.com/RimTanaka/Parcel-Machine" target="_blank">Ссылка на проект</a>
+                    </li>
+                    <li><strong>HTTP Server | C, HTML, CSS</strong><br>
+                      <hr>
+                      <p>HTTP Server на языке Си. Проект представляет собой реализацию HTTP и WebSocket-сервера, способного поддерживать чат между пользователями. </p>
+                        <a href="https://github.com/RimTanaka/HTTP_serv_c" target="_blank">Ссылка на проект</a>
+                    </li>
+                    <li><strong>Decimal | C</strong><br>
+                      <hr>
+                        <p>Командный проект по разработке библиотеки decimal.a для точных финансовых вычислений.</p>
+                        <a href="https://github.com/RimTanaka/s21_decimal/tree/develop" target="_blank">Ссылка на проект</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="block">
+                <h2 style="color: black;">ОПЫТ РАБОТЫ</h2>
+                <div>
+                  <span style="float: left;"><strong>Школа 21</strong></span>
+                  <span style="float: right;">(04.2024 - наст. время)</span>
+                </div>
+                <br>
+                <p>Образовательный проект для разработчиков от Сбер.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p align="center">&copy; 2024 Рим Мингазов</p>
     </div>
 </body>
 </html>
